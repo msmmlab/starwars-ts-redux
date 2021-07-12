@@ -1,5 +1,6 @@
 import CharactersList from "./charactersList";
 import PlanetList from "./planetsList";
+import "./App.css";
 const App = () => {
   return (
     <div>
