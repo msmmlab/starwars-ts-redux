@@ -20,9 +20,9 @@ const personReducer = (
   switch (action.type) {
     case ActionType.FETCH_CHARACTERS:
       return { loading: true, error: null, data: [] };
-    case ActionType.FETCH_ERROR:
+    case ActionType.FETCH_CHARACTERS_ERROR:
       return { loading: false, error: action.payload, data: [] };
-    case ActionType.FETCH_SUCCESS:
+    case ActionType.FETCH_CHARACTERS_SUCCESS:
       return { loading: false, error: null, data: action.payload };
     default:
       return state;

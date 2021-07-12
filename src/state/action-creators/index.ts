@@ -14,12 +14,12 @@ export const fetchCharacters = () => {
         return result.name;
       });
       dispatch({
-        type: ActionType.FETCH_SUCCESS,
+        type: ActionType.FETCH_CHARACTERS_SUCCESS,
         payload: characters,
       });
     } catch (error) {
       dispatch({
-        type: ActionType.FETCH_ERROR,
+        type: ActionType.FETCH_CHARACTERS_ERROR,
         payload: error.message,
       });
     }
@@ -38,12 +38,12 @@ export const fetchPlanets = () => {
         return planet.name;
       });
       dispatch({
-        type: ActionType.FETCH_SUCCESS,
+        type: ActionType.FETCH_PLANETS_SUCCESS,
         payload: planets,
       });
     } catch (error) {
       dispatch({
-        type: ActionType.FETCH_ERROR,
+        type: ActionType.FETCH_PLANETS_ERROR,
         payload: error.message,
       });
     }
